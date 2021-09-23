@@ -1,18 +1,25 @@
 html{
   font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-  
 }
 
-body, header {
+body{
   margin: 0;
-  width: 600px;
-  margin: auto;
   }
 
+main{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+}
   header{
-    margin-left: 90px;
+    margin-left: 20px;
     margin-bottom: -20px;
     color: #30d18e;
+    display: flex;
+  justify-content: center;
+  align-items:center;
   }
   
   .navlinks {
@@ -24,6 +31,7 @@ body, header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .navlink > a {
@@ -35,6 +43,18 @@ body, header {
     text-decoration: none;
   }
   
+
   .navlink > a:hover {
     color: #30d18e;
+  }
+  @media (max-width: 600px){
+    html{
+      width: 100%;
+    }
+    header{
+      margin-left: 20px;
+    }
+    .navlink > a{
+      font-size: 1em;
+    }
   }
