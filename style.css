@@ -1,11 +1,17 @@
 html{
   font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
 }
 
 body{
   margin: 0;
   }
-
+p{
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  overflow-wrap: break-word;
+}
 main{
   padding: 5px;
   display: flex;
@@ -43,7 +49,6 @@ main{
     text-decoration: none;
   }
   
-
   .navlink > a:hover {
     color: #30d18e;
   }
