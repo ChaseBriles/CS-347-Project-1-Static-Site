@@ -1,6 +1,5 @@
 html{
   font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    
 }
 
 body{
@@ -9,6 +8,7 @@ body{
   }
 p{
   max-width: 600px;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -43,13 +43,15 @@ main{
   }
   
   .navlink > a {
-    color: black;
+    color: #30d18e;
     padding: 10px;
     display: inline-block;
     font-family: sans-serif;
     font-size: 1.25em;
     text-decoration: none;
+    font-weight: bold;
     padding-bottom: -10px;
+    
   }
   
   .navlink > a:hover {
@@ -63,6 +65,12 @@ main{
   h1{
     border-bottom: 5px solid #30d18e;
     border-bottom-style: double;
+  }
+  #homepage_pic{
+    border-radius:7px;
+  }
+  strong{
+    color:#30d18e;
   }
   @media (min-width: 1400px){
     #homepage_pic{
