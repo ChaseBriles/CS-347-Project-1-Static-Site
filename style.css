@@ -118,10 +118,9 @@ main{
     .navlink > a{
       font-size: 1em;
     }
-  @media(max-width: 600px){
+
     input, textarea{
-      width: 100%;
+      width: 300px;
     }
-  }
   }
 
