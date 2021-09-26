@@ -4,7 +4,6 @@ html{
 
 body{
   margin: 0;
-  
   }
 p{
   max-width: 600px;
@@ -71,6 +70,40 @@ main{
   }
   strong{
     color:#30d18e;
+  }
+
+  input, textarea{
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #30d18e;
+    border-radius: 3px;
+    resize: none;
+  }
+
+  textarea{
+    height: 150px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  input[type=submit]{
+    background-color: #30d18e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+  }
+  input[type=submit]:hover{
+   background-color:#50fdb5;
+  }
+ input:focus, textarea:focus{
+  background-color: #50fdb5;
+  border: 1px solid white;
+ }
+
+  #contact_form{
+    display:flex;
+    flex-direction: column;
   }
   @media (min-width: 1400px){
     #homepage_pic{
