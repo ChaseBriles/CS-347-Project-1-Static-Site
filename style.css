@@ -104,6 +104,12 @@ main{
     display:flex;
     flex-direction: column;
   }
+  .quote{
+    border: 1px solid #30d18e;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #50fdb5;
+  }
   @media (min-width: 1400px){
     #homepage_pic{
       position: absolute;
