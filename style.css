@@ -110,6 +110,22 @@ main{
     border-radius: 5px;
     box-shadow: 2px 2px #50fdb5;
   }
+
+  .quote:hover{
+    background-color: #50fdb5;
+    box-shadow: 2px 2px #30d18e;
+  }
+
+  a:link{
+    color: #30d18e;
+    padding: 10px;
+  }
+  a:visited{
+    color:#30d18e;
+  }
+  a:hover{
+    color:#50fdb5;
+  }
   @media (min-width: 1400px){
     #homepage_pic{
       position: absolute;
