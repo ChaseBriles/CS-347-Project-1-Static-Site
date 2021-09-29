@@ -4,11 +4,16 @@ html{
 
 body{
   margin: 0;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-left:5px;
   }
 p{
   max-width: 600px;
   width: 100%;
-  margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
   padding-left:5px;
@@ -17,8 +22,8 @@ main{
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  justify-content: left;
+  align-items:left;
   /*flex-wrap:wrap;*/
 }
   header{
@@ -26,7 +31,7 @@ main{
     color: #30d18e;
     display: flex;
   justify-content: center;
-  align-items:center;
+  align-items:left;
   }
   
   .navlinks {
@@ -37,7 +42,7 @@ main{
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   
@@ -56,12 +61,19 @@ main{
     color: #50fdb5;
   }
   img{
-    width: 350px;
+    max-height: 200px;
+    max-width: 250px;
   }
   
   h1{
     border-bottom: 5px solid #30d18e;
     border-bottom-style: double;
+  }
+  h2{
+    color:#30d18e;
+  }
+  h4{
+    color:#30d18e;
   }
   #homepage_pic{
     border-radius:7px;
@@ -69,7 +81,9 @@ main{
   strong{
     color:#30d18e;
   }
-
+  figcaption{
+    font-size: 10px;
+  }
   input, textarea{
     width:400px;
     padding:20px;
@@ -115,10 +129,14 @@ main{
     background-color: #50fdb5;
     box-shadow: 2px 2px #30d18e;
   }
-
+  #quotes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
   a:link{
     color: #30d18e;
-    padding: 10px;
+    padding: 0px;
   }
   a:visited{
     color:#30d18e;
@@ -126,10 +144,29 @@ main{
   a:hover{
     color:#50fdb5;
   }
+  figcaption{
+    width: 200px;
+  }
   @media (min-width: 1400px){
     #homepage_pic{
       position: absolute;
-      right: 60px;
+      right: 150px;
+    }
+    
+    #history2{
+      position: absolute;
+      right: 150px;
+      bottom: 75px;
+    }
+    #history3{
+      position: absolute;
+      left: 100px;
+      top: 700px;
+    }
+    #history4{
+      position: absolute;
+      right: 150px;
+      top: 1000px;
     }
   }
   @media (max-width: 600px){
@@ -141,12 +178,11 @@ main{
       font-size: 1em;
     }
 
-    input, textarea{
+    input, textarea, .quote{
       width: 300px;
     }
-
-    .quote{
-      width: 300px;
+    p{
+      width: 400px;
     }
   }
 
