@@ -181,8 +181,9 @@ main{
     input, textarea, .quote{
       width: 300px;
     }
-    p{
-      width: 400px;
+    p,body{
+      width: 375px;
+      max-width: 100%;
     }
   }
 
