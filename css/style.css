@@ -21,6 +21,7 @@ img {
   max-height: 200px;
   max-width: 250px;
 }
+
 figure {
   margin: 0;
 }
@@ -30,9 +31,11 @@ header {
   display: flex;
   justify-content: center;
 }
+
 h1, h2, h4 {
   font-family: "Courier New", Courier, monospace;
 }
+
 .navlinks {
   list-style-type: none;
   padding: 0;
@@ -55,20 +58,34 @@ h1, h2, h4 {
   font-weight: bold;
 }
 
-.navlink > a:hover, a:hover {
-  color: #50fdb5;
-}
-
 h1, h2, h4, strong, a:link, a:visited {
   color: #30d18e;
 }
-#homepage_pic {
+
+#homepage-pic {
   border-radius: 7px;
+}
+
+.navlink > a:hover, a:hover {
+  color: #50fdb5;
+  animation-duration: 0.5s;
+  animation-name: hover-animation;
+}
+
+@keyframes hover-animation {
+  from {
+   color: green;
+  }
+
+  to{
+    color: #50fdb5;
+  }
 }
 
 figcaption {
   font-size: 10px;
 }
+
 input, textarea {
   width: 400px;
   padding: 20px;
@@ -76,9 +93,11 @@ input, textarea {
   border-radius: 3px;
   resize: none;
 }
+
 .links {
   margin-bottom: 20px;
 }
+
 textarea {
   height: 150px;
   font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
@@ -93,9 +112,11 @@ input[type="submit"] {
   border-radius: 5px;
   width: 30%;
 }
+
 input[type="submit"]:hover {
   background-color: #50fdb5;
 }
+
 input:focus, textarea:focus {
   background-color: #50fdb5;
   border: 1px solid white;
@@ -105,6 +126,7 @@ input:focus, textarea:focus {
   display: flex;
   flex-direction: column;
 }
+
 .quote {
   width: 400px;
   border: 1px solid #30d18e;
@@ -117,11 +139,13 @@ input:focus, textarea:focus {
   background-color: #50fdb5;
   box-shadow: 2px 2px #30d18e;
 }
+
 #quotes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 a:link {
   padding: 0px;
 }
@@ -129,8 +153,9 @@ a:link {
 figcaption {
   width: 200px;
 }
+
 @media (min-width: 1400px) {
-  #homepage_pic {
+  #homepage-pic {
     position: absolute;
     right: 150px;
     top: 200px;
@@ -141,11 +166,13 @@ figcaption {
     right: 150px;
     bottom: 25px;
   }
+
   #history2 {
     position: absolute;
     left: 100px;
     top: 750px;
   }
+
   #history3 {
     position: absolute;
     right: 150px;
@@ -164,6 +191,7 @@ figcaption {
   input, textarea, .quote {
     width: 300px;
   }
+  
   p, body {
     width: 375px;
     max-width: 100%;
